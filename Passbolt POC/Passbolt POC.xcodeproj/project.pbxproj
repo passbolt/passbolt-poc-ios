@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAA56505256D2E39003D9EA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56504256D2E39003D9EA5 /* AppDelegate.swift */; };
-		FAA56507256D2E39003D9EA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56506256D2E39003D9EA5 /* SceneDelegate.swift */; };
-		FAA56509256D2E39003D9EA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56508256D2E39003D9EA5 /* ContentView.swift */; };
-		FAA5650B256D2E3D003D9EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA5650A256D2E3D003D9EA5 /* Assets.xcassets */; };
-		FAA5650E256D2E3D003D9EA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA5650D256D2E3D003D9EA5 /* Preview Assets.xcassets */; };
-		FAA56511256D2E3D003D9EA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5650F256D2E3D003D9EA5 /* LaunchScreen.storyboard */; };
-		FAA5651C256D2E3D003D9EA5 /* Passbolt_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5651B256D2E3D003D9EA5 /* Passbolt_POCTests.swift */; };
-		FAA56527256D2E3D003D9EA5 /* Passbolt_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA56526256D2E3D003D9EA5 /* Passbolt_POCUITests.swift */; };
+		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
+		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
+		FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE97256D5E0000FCCA97 /* ViewController.swift */; };
+		FAFADE9B256D5E0000FCCA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE99256D5E0000FCCA97 /* Main.storyboard */; };
+		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
+		FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */; };
+		FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */; };
+		FAFADEB6256D5E0300FCCA97 /* Passbolt_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FAA56518256D2E3D003D9EA5 /* PBXContainerItemProxy */ = {
+		FAFADEA7256D5E0300FCCA97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FAA564F9256D2E39003D9EA5 /* Project object */;
+			containerPortal = FAFADE88256D5DFF00FCCA97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAA56500256D2E39003D9EA5;
+			remoteGlobalIDString = FAFADE8F256D5E0000FCCA97;
 			remoteInfo = "Passbolt POC";
 		};
-		FAA56523256D2E3D003D9EA5 /* PBXContainerItemProxy */ = {
+		FAFADEB2256D5E0300FCCA97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FAA564F9256D2E39003D9EA5 /* Project object */;
+			containerPortal = FAFADE88256D5DFF00FCCA97 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAA56500256D2E39003D9EA5;
+			remoteGlobalIDString = FAFADE8F256D5E0000FCCA97;
 			remoteInfo = "Passbolt POC";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FAA56501256D2E39003D9EA5 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA56504256D2E39003D9EA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA56506256D2E39003D9EA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA56508256D2E39003D9EA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAA5650A256D2E3D003D9EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAA5650D256D2E3D003D9EA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAA56510256D2E3D003D9EA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FAA56512256D2E3D003D9EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA56517256D2E3D003D9EA5 /* Passbolt POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA5651B256D2E3D003D9EA5 /* Passbolt_POCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCTests.swift; sourceTree = "<group>"; };
-		FAA5651D256D2E3D003D9EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA56522256D2E3D003D9EA5 /* Passbolt POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA56526256D2E3D003D9EA5 /* Passbolt_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCUITests.swift; sourceTree = "<group>"; };
-		FAA56528256D2E3D003D9EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAFADE97256D5E0000FCCA97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFADE9A256D5E0000FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFADE9F256D5E0300FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFADEA1256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFADEA6256D5E0300FCCA97 /* Passbolt POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCTests.swift; sourceTree = "<group>"; };
+		FAFADEAC256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFADEB1256D5E0300FCCA97 /* Passbolt POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCUITests.swift; sourceTree = "<group>"; };
+		FAFADEB7256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FAA564FE256D2E39003D9EA5 /* Frameworks */ = {
+		FAFADE8D256D5E0000FCCA97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA56514256D2E3D003D9EA5 /* Frameworks */ = {
+		FAFADEA3256D5E0300FCCA97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA5651F256D2E3D003D9EA5 /* Frameworks */ = {
+		FAFADEAE256D5E0300FCCA97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,62 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FAA564F8256D2E39003D9EA5 = {
+		FAFADE87256D5DFF00FCCA97 = {
 			isa = PBXGroup;
 			children = (
-				FAA56503256D2E39003D9EA5 /* Passbolt POC */,
-				FAA5651A256D2E3D003D9EA5 /* Passbolt POCTests */,
-				FAA56525256D2E3D003D9EA5 /* Passbolt POCUITests */,
-				FAA56502256D2E39003D9EA5 /* Products */,
+				FAFADE92256D5E0000FCCA97 /* Passbolt POC */,
+				FAFADEA9256D5E0300FCCA97 /* Passbolt POCTests */,
+				FAFADEB4256D5E0300FCCA97 /* Passbolt POCUITests */,
+				FAFADE91256D5E0000FCCA97 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FAA56502256D2E39003D9EA5 /* Products */ = {
+		FAFADE91256D5E0000FCCA97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAA56501256D2E39003D9EA5 /* Passbolt POC.app */,
-				FAA56517256D2E3D003D9EA5 /* Passbolt POCTests.xctest */,
-				FAA56522256D2E3D003D9EA5 /* Passbolt POCUITests.xctest */,
+				FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */,
+				FAFADEA6256D5E0300FCCA97 /* Passbolt POCTests.xctest */,
+				FAFADEB1256D5E0300FCCA97 /* Passbolt POCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAA56503256D2E39003D9EA5 /* Passbolt POC */ = {
+		FAFADE92256D5E0000FCCA97 /* Passbolt POC */ = {
 			isa = PBXGroup;
 			children = (
-				FAA56504256D2E39003D9EA5 /* AppDelegate.swift */,
-				FAA56506256D2E39003D9EA5 /* SceneDelegate.swift */,
-				FAA56508256D2E39003D9EA5 /* ContentView.swift */,
-				FAA5650A256D2E3D003D9EA5 /* Assets.xcassets */,
-				FAA5650F256D2E3D003D9EA5 /* LaunchScreen.storyboard */,
-				FAA56512256D2E3D003D9EA5 /* Info.plist */,
-				FAA5650C256D2E3D003D9EA5 /* Preview Content */,
+				FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */,
+				FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */,
+				FAFADE97256D5E0000FCCA97 /* ViewController.swift */,
+				FAFADE99256D5E0000FCCA97 /* Main.storyboard */,
+				FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */,
+				FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */,
+				FAFADEA1256D5E0300FCCA97 /* Info.plist */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
 		};
-		FAA5650C256D2E3D003D9EA5 /* Preview Content */ = {
+		FAFADEA9256D5E0300FCCA97 /* Passbolt POCTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAA5650D256D2E3D003D9EA5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAA5651A256D2E3D003D9EA5 /* Passbolt POCTests */ = {
-			isa = PBXGroup;
-			children = (
-				FAA5651B256D2E3D003D9EA5 /* Passbolt_POCTests.swift */,
-				FAA5651D256D2E3D003D9EA5 /* Info.plist */,
+				FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */,
+				FAFADEAC256D5E0300FCCA97 /* Info.plist */,
 			);
 			path = "Passbolt POCTests";
 			sourceTree = "<group>";
 		};
-		FAA56525256D2E3D003D9EA5 /* Passbolt POCUITests */ = {
+		FAFADEB4256D5E0300FCCA97 /* Passbolt POCUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FAA56526256D2E3D003D9EA5 /* Passbolt_POCUITests.swift */,
-				FAA56528256D2E3D003D9EA5 /* Info.plist */,
+				FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */,
+				FAFADEB7256D5E0300FCCA97 /* Info.plist */,
 			);
 			path = "Passbolt POCUITests";
 			sourceTree = "<group>";
@@ -139,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAA56500256D2E39003D9EA5 /* Passbolt POC */ = {
+		FAFADE8F256D5E0000FCCA97 /* Passbolt POC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAA5652B256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POC" */;
+			buildConfigurationList = FAFADEBA256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POC" */;
 			buildPhases = (
-				FAA564FD256D2E39003D9EA5 /* Sources */,
-				FAA564FE256D2E39003D9EA5 /* Frameworks */,
-				FAA564FF256D2E39003D9EA5 /* Resources */,
+				FAFADE8C256D5E0000FCCA97 /* Sources */,
+				FAFADE8D256D5E0000FCCA97 /* Frameworks */,
+				FAFADE8E256D5E0000FCCA97 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,68 +145,68 @@
 			);
 			name = "Passbolt POC";
 			productName = "Passbolt POC";
-			productReference = FAA56501256D2E39003D9EA5 /* Passbolt POC.app */;
+			productReference = FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAA56516256D2E3D003D9EA5 /* Passbolt POCTests */ = {
+		FAFADEA5256D5E0300FCCA97 /* Passbolt POCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAA5652E256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POCTests" */;
+			buildConfigurationList = FAFADEBD256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POCTests" */;
 			buildPhases = (
-				FAA56513256D2E3D003D9EA5 /* Sources */,
-				FAA56514256D2E3D003D9EA5 /* Frameworks */,
-				FAA56515256D2E3D003D9EA5 /* Resources */,
+				FAFADEA2256D5E0300FCCA97 /* Sources */,
+				FAFADEA3256D5E0300FCCA97 /* Frameworks */,
+				FAFADEA4256D5E0300FCCA97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FAA56519256D2E3D003D9EA5 /* PBXTargetDependency */,
+				FAFADEA8256D5E0300FCCA97 /* PBXTargetDependency */,
 			);
 			name = "Passbolt POCTests";
 			productName = "Passbolt POCTests";
-			productReference = FAA56517256D2E3D003D9EA5 /* Passbolt POCTests.xctest */;
+			productReference = FAFADEA6256D5E0300FCCA97 /* Passbolt POCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FAA56521256D2E3D003D9EA5 /* Passbolt POCUITests */ = {
+		FAFADEB0256D5E0300FCCA97 /* Passbolt POCUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAA56531256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POCUITests" */;
+			buildConfigurationList = FAFADEC0256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POCUITests" */;
 			buildPhases = (
-				FAA5651E256D2E3D003D9EA5 /* Sources */,
-				FAA5651F256D2E3D003D9EA5 /* Frameworks */,
-				FAA56520256D2E3D003D9EA5 /* Resources */,
+				FAFADEAD256D5E0300FCCA97 /* Sources */,
+				FAFADEAE256D5E0300FCCA97 /* Frameworks */,
+				FAFADEAF256D5E0300FCCA97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FAA56524256D2E3D003D9EA5 /* PBXTargetDependency */,
+				FAFADEB3256D5E0300FCCA97 /* PBXTargetDependency */,
 			);
 			name = "Passbolt POCUITests";
 			productName = "Passbolt POCUITests";
-			productReference = FAA56522256D2E3D003D9EA5 /* Passbolt POCUITests.xctest */;
+			productReference = FAFADEB1256D5E0300FCCA97 /* Passbolt POCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FAA564F9256D2E39003D9EA5 /* Project object */ = {
+		FAFADE88256D5DFF00FCCA97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					FAA56500256D2E39003D9EA5 = {
+					FAFADE8F256D5E0000FCCA97 = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					FAA56516256D2E3D003D9EA5 = {
+					FAFADEA5256D5E0300FCCA97 = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = FAA56500256D2E39003D9EA5;
+						TestTargetID = FAFADE8F256D5E0000FCCA97;
 					};
-					FAA56521256D2E3D003D9EA5 = {
+					FAFADEB0256D5E0300FCCA97 = {
 						CreatedOnToolsVersion = 12.2;
-						TestTargetID = FAA56500256D2E39003D9EA5;
+						TestTargetID = FAFADE8F256D5E0000FCCA97;
 					};
 				};
 			};
-			buildConfigurationList = FAA564FC256D2E39003D9EA5 /* Build configuration list for PBXProject "Passbolt POC" */;
+			buildConfigurationList = FAFADE8B256D5DFF00FCCA97 /* Build configuration list for PBXProject "Passbolt POC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,37 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = FAA564F8256D2E39003D9EA5;
-			productRefGroup = FAA56502256D2E39003D9EA5 /* Products */;
+			mainGroup = FAFADE87256D5DFF00FCCA97;
+			productRefGroup = FAFADE91256D5E0000FCCA97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAA56500256D2E39003D9EA5 /* Passbolt POC */,
-				FAA56516256D2E3D003D9EA5 /* Passbolt POCTests */,
-				FAA56521256D2E3D003D9EA5 /* Passbolt POCUITests */,
+				FAFADE8F256D5E0000FCCA97 /* Passbolt POC */,
+				FAFADEA5256D5E0300FCCA97 /* Passbolt POCTests */,
+				FAFADEB0256D5E0300FCCA97 /* Passbolt POCUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FAA564FF256D2E39003D9EA5 /* Resources */ = {
+		FAFADE8E256D5E0000FCCA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA56511256D2E3D003D9EA5 /* LaunchScreen.storyboard in Resources */,
-				FAA5650E256D2E3D003D9EA5 /* Preview Assets.xcassets in Resources */,
-				FAA5650B256D2E3D003D9EA5 /* Assets.xcassets in Resources */,
+				FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */,
+				FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */,
+				FAFADE9B256D5E0000FCCA97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA56515256D2E3D003D9EA5 /* Resources */ = {
+		FAFADEA4256D5E0300FCCA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA56520256D2E3D003D9EA5 /* Resources */ = {
+		FAFADEAF256D5E0300FCCA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,52 +254,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FAA564FD256D2E39003D9EA5 /* Sources */ = {
+		FAFADE8C256D5E0000FCCA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA56505256D2E39003D9EA5 /* AppDelegate.swift in Sources */,
-				FAA56507256D2E39003D9EA5 /* SceneDelegate.swift in Sources */,
-				FAA56509256D2E39003D9EA5 /* ContentView.swift in Sources */,
+				FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */,
+				FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */,
+				FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA56513256D2E3D003D9EA5 /* Sources */ = {
+		FAFADEA2256D5E0300FCCA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA5651C256D2E3D003D9EA5 /* Passbolt_POCTests.swift in Sources */,
+				FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA5651E256D2E3D003D9EA5 /* Sources */ = {
+		FAFADEAD256D5E0300FCCA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA56527256D2E3D003D9EA5 /* Passbolt_POCUITests.swift in Sources */,
+				FAFADEB6256D5E0300FCCA97 /* Passbolt_POCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FAA56519256D2E3D003D9EA5 /* PBXTargetDependency */ = {
+		FAFADEA8256D5E0300FCCA97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAA56500256D2E39003D9EA5 /* Passbolt POC */;
-			targetProxy = FAA56518256D2E3D003D9EA5 /* PBXContainerItemProxy */;
+			target = FAFADE8F256D5E0000FCCA97 /* Passbolt POC */;
+			targetProxy = FAFADEA7256D5E0300FCCA97 /* PBXContainerItemProxy */;
 		};
-		FAA56524256D2E3D003D9EA5 /* PBXTargetDependency */ = {
+		FAFADEB3256D5E0300FCCA97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FAA56500256D2E39003D9EA5 /* Passbolt POC */;
-			targetProxy = FAA56523256D2E3D003D9EA5 /* PBXContainerItemProxy */;
+			target = FAFADE8F256D5E0000FCCA97 /* Passbolt POC */;
+			targetProxy = FAFADEB2256D5E0300FCCA97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAA5650F256D2E3D003D9EA5 /* LaunchScreen.storyboard */ = {
+		FAFADE99256D5E0000FCCA97 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FAA56510256D2E3D003D9EA5 /* Base */,
+				FAFADE9A256D5E0000FCCA97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFADE9F256D5E0300FCCA97 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FAA56529256D2E3D003D9EA5 /* Debug */ = {
+		FAFADEB8256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		FAA5652A256D2E3D003D9EA5 /* Release */ = {
+		FAFADEB9256D5E0300FCCA97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,16 +431,14 @@
 			};
 			name = Release;
 		};
-		FAA5652C256D2E3D003D9EA5 /* Debug */ = {
+		FAFADEBB256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_ASSET_PATHS = "\"Passbolt POC/Preview Content\"";
 				DEVELOPMENT_TEAM = WR35VQMY5K;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Passbolt POC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,16 +454,14 @@
 			};
 			name = Debug;
 		};
-		FAA5652D256D2E3D003D9EA5 /* Release */ = {
+		FAFADEBC256D5E0300FCCA97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_ASSET_PATHS = "\"Passbolt POC/Preview Content\"";
 				DEVELOPMENT_TEAM = WR35VQMY5K;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Passbolt POC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,7 +477,7 @@
 			};
 			name = Release;
 		};
-		FAA5652F256D2E3D003D9EA5 /* Debug */ = {
+		FAFADEBE256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -503,7 +499,7 @@
 			};
 			name = Debug;
 		};
-		FAA56530256D2E3D003D9EA5 /* Release */ = {
+		FAFADEBF256D5E0300FCCA97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,7 +521,7 @@
 			};
 			name = Release;
 		};
-		FAA56532256D2E3D003D9EA5 /* Debug */ = {
+		FAFADEC1256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -545,7 +541,7 @@
 			};
 			name = Debug;
 		};
-		FAA56533256D2E3D003D9EA5 /* Release */ = {
+		FAFADEC2256D5E0300FCCA97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -568,43 +564,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA564FC256D2E39003D9EA5 /* Build configuration list for PBXProject "Passbolt POC" */ = {
+		FAFADE8B256D5DFF00FCCA97 /* Build configuration list for PBXProject "Passbolt POC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAA56529256D2E3D003D9EA5 /* Debug */,
-				FAA5652A256D2E3D003D9EA5 /* Release */,
+				FAFADEB8256D5E0300FCCA97 /* Debug */,
+				FAFADEB9256D5E0300FCCA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAA5652B256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POC" */ = {
+		FAFADEBA256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAA5652C256D2E3D003D9EA5 /* Debug */,
-				FAA5652D256D2E3D003D9EA5 /* Release */,
+				FAFADEBB256D5E0300FCCA97 /* Debug */,
+				FAFADEBC256D5E0300FCCA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAA5652E256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POCTests" */ = {
+		FAFADEBD256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAA5652F256D2E3D003D9EA5 /* Debug */,
-				FAA56530256D2E3D003D9EA5 /* Release */,
+				FAFADEBE256D5E0300FCCA97 /* Debug */,
+				FAFADEBF256D5E0300FCCA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAA56531256D2E3D003D9EA5 /* Build configuration list for PBXNativeTarget "Passbolt POCUITests" */ = {
+		FAFADEC0256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAA56532256D2E3D003D9EA5 /* Debug */,
-				FAA56533256D2E3D003D9EA5 /* Release */,
+				FAFADEC1256D5E0300FCCA97 /* Debug */,
+				FAFADEC2256D5E0300FCCA97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FAA564F9256D2E39003D9EA5 /* Project object */;
+	rootObject = FAFADE88256D5DFF00FCCA97 /* Project object */;
 }
