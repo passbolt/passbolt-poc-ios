@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222225899A97EC8F9CE465C /* UIView+Subviews.swift */; };
 		E22225436B800AC682E0B6D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222DA5F2DA5EB4170072F9 /* MainView.swift */; };
 		E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */; };
-		FAB47CF4256E8DE400321530 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB47CF3256E8DE400321530 /* SnapKit */; };
+		FAB47D04256E933600321530 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB47CF3256E8DE400321530 /* SnapKit */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
 		FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE97256D5E0000FCCA97 /* ViewController.swift */; };
-		FAFADE9B256D5E0000FCCA97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE99256D5E0000FCCA97 /* Main.storyboard */; };
 		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
 		FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */; };
 		FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */; };
@@ -38,13 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E222225899A97EC8F9CE465C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		E2222DA5F2DA5EB4170072F9 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAFADE97256D5E0000FCCA97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAFADE9A256D5E0000FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFADE9F256D5E0300FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFADEA1256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB47CF4256E8DE400321530 /* SnapKit in Frameworks */,
+				FAB47D04256E933600321530 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2222DE60BCDC5CE8AB684A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E222225899A97EC8F9CE465C /* UIView+Subviews.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E2222E47CD0DD845A5CC0F0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +125,11 @@
 				FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */,
 				FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */,
 				FAFADE97256D5E0000FCCA97 /* ViewController.swift */,
-				FAFADE99256D5E0000FCCA97 /* Main.storyboard */,
 				FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */,
 				FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */,
 				FAFADEA1256D5E0300FCCA97 /* Info.plist */,
 				E2222E47CD0DD845A5CC0F0F /* Main */,
+				E2222DE60BCDC5CE8AB684A4 /* Extensions */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
@@ -255,7 +263,6 @@
 			files = (
 				FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */,
 				FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */,
-				FAFADE9B256D5E0000FCCA97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +292,7 @@
 				FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */,
 				E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */,
 				E22225436B800AC682E0B6D5 /* MainView.swift in Sources */,
+				E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAFADE99256D5E0000FCCA97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAFADE9A256D5E0000FCCA97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
