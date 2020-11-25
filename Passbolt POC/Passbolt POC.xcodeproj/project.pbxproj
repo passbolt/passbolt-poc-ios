@@ -10,10 +10,9 @@
 		E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222225899A97EC8F9CE465C /* UIView+Subviews.swift */; };
 		E22225436B800AC682E0B6D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222DA5F2DA5EB4170072F9 /* MainView.swift */; };
 		E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */; };
-		FAB47D04256E933600321530 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB47CF3256E8DE400321530 /* SnapKit */; };
+		FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA106287256E9E300051074F /* Gopenpgp.framework */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
-		FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE97256D5E0000FCCA97 /* ViewController.swift */; };
 		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
 		FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */; };
 		FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */; };
@@ -41,10 +40,10 @@
 		E222225899A97EC8F9CE465C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		E2222DA5F2DA5EB4170072F9 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA106287256E9E300051074F /* Gopenpgp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gopenpgp.framework; path = Frameworks/Gopenpgp.framework; sourceTree = "<group>"; };
 		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAFADE97256D5E0000FCCA97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFADE9F256D5E0300FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFADEA1256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB47D04256E933600321530 /* SnapKit in Frameworks */,
+				FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +98,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		FA106286256E9E300051074F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA106287256E9E300051074F /* Gopenpgp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAFADE87256D5DFF00FCCA97 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +113,7 @@
 				FAFADEA9256D5E0300FCCA97 /* Passbolt POCTests */,
 				FAFADEB4256D5E0300FCCA97 /* Passbolt POCUITests */,
 				FAFADE91256D5E0000FCCA97 /* Products */,
+				FA106286256E9E300051074F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +132,6 @@
 			children = (
 				FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */,
 				FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */,
-				FAFADE97256D5E0000FCCA97 /* ViewController.swift */,
 				FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */,
 				FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */,
 				FAFADEA1256D5E0300FCCA97 /* Info.plist */,
@@ -169,7 +176,7 @@
 			);
 			name = "Passbolt POC";
 			packageProductDependencies = (
-				FAB47CF3256E8DE400321530 /* SnapKit */,
+				FAB47CF3256E8DE400321530,
 			);
 			productName = "Passbolt POC";
 			productReference = FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */;
@@ -243,7 +250,7 @@
 			);
 			mainGroup = FAFADE87256D5DFF00FCCA97;
 			packageReferences = (
-				FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FAB47CF2256E8DE400321530,
 			);
 			productRefGroup = FAFADE91256D5E0000FCCA97 /* Products */;
 			projectDirPath = "";
@@ -287,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */,
 				FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */,
 				FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */,
 				E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */,
@@ -463,6 +469,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WR35VQMY5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Passbolt POC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,6 +496,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WR35VQMY5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "Passbolt POC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,7 +641,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		FAB47CF2256E8DE400321530 = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -638,9 +652,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FAB47CF3256E8DE400321530 /* SnapKit */ = {
+		FAB47CF3256E8DE400321530 = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = FAB47CF2256E8DE400321530;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

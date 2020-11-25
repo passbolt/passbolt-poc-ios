@@ -6,14 +6,15 @@ class MainView: UIView {
 
     lazy var label: UILabel = {
         let label = UILabel()
-        label.textColor = .black
-        label.text = "Passbolt POC"
+        label.textColor = UIColor.label
+        label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
     init() {
         super.init(frame: .zero)
-        self.backgroundColor = .white
+        self.backgroundColor = UIColor.systemBackground
         addSubviews(label)
         setupConstraints()
     }
@@ -23,9 +24,13 @@ class MainView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    public func setLabelText(text: String) {
+        label.text = text
+    }
+
     private func setupConstraints() {
         label.snp.makeConstraints {
-            $0.center.equalToSuperview()
+            $0.edges.equalTo(self.safeAreaLayoutGuide.snp.edges).inset(16)
         }
     }
 }
