@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22225436B800AC682E0B6D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222DA5F2DA5EB4170072F9 /* MainView.swift */; };
+		E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
 		FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE97256D5E0000FCCA97 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2222DA5F2DA5EB4170072F9 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2222E47CD0DD845A5CC0F0F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */,
+				E2222DA5F2DA5EB4170072F9 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		FAFADE87256D5DFF00FCCA97 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 				FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */,
 				FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */,
 				FAFADEA1256D5E0300FCCA97 /* Info.plist */,
+				E2222E47CD0DD845A5CC0F0F /* Main */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
@@ -261,6 +275,8 @@
 				FAFADE98256D5E0000FCCA97 /* ViewController.swift in Sources */,
 				FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */,
 				FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */,
+				E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */,
+				E22225436B800AC682E0B6D5 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
