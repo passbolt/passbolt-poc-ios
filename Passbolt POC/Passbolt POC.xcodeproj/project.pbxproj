@@ -11,6 +11,7 @@
 		E22225436B800AC682E0B6D5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222DA5F2DA5EB4170072F9 /* MainView.swift */; };
 		E2222DF09C888FD6239FC274 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222ECC2AF8F7DD6D4D9652 /* MainViewController.swift */; };
 		FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA106287256E9E300051074F /* Gopenpgp.framework */; };
+		FAABD2E725764D20008245F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB47CF3256E8DE400321530 /* SnapKit */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
 		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */,
+				FAABD2E725764D20008245F3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +178,7 @@
 			);
 			name = "Passbolt POC";
 			packageProductDependencies = (
-				FAB47CF3256E8DE400321530,
+				FAB47CF3256E8DE400321530 /* SnapKit */,
 			);
 			productName = "Passbolt POC";
 			productReference = FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */;
@@ -250,7 +252,7 @@
 			);
 			mainGroup = FAFADE87256D5DFF00FCCA97;
 			packageReferences = (
-				FAB47CF2256E8DE400321530,
+				FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FAFADE91256D5E0000FCCA97 /* Products */;
 			projectDirPath = "";
@@ -468,7 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WR35VQMY5K;
+				DEVELOPMENT_TEAM = UHX38H22ZT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -480,9 +482,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.polidea.passbolt.poc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.passbolt.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Passbolt POC";
+				PROVISIONING_PROFILE_SPECIFIER = "Polidea POC dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WR35VQMY5K;
+				DEVELOPMENT_TEAM = UHX38H22ZT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -507,9 +509,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.polidea.passbolt.poc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.passbolt.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Passbolt POC";
+				PROVISIONING_PROFILE_SPECIFIER = "Polidea POC dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -641,7 +643,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FAB47CF2256E8DE400321530 = {
+		FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -652,9 +654,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FAB47CF3256E8DE400321530 = {
+		FAB47CF3256E8DE400321530 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAB47CF2256E8DE400321530;
+			package = FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
