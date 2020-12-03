@@ -11,7 +11,9 @@
 		E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222225899A97EC8F9CE465C /* UIView+Subviews.swift */; };
 		E222248621EFBE24C3E12CDE /* PassboltKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222294565456D675B800409 /* PassboltKeys.swift */; };
 		E22225436B800AC682E0B6D5 /* EncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222DA5F2DA5EB4170072F9 /* EncryptionView.swift */; };
+		E2222868CF0572328393D30A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222874EB4CB6D9B50629AD /* SignViewController.swift */; };
 		E2222DF09C888FD6239FC274 /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222ECC2AF8F7DD6D4D9652 /* EncryptionViewController.swift */; };
+		E2222FA316541CF3555D5775 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222FD0B1C0FBAD1BD7CC0D /* SignView.swift */; };
 		FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA106287256E9E300051074F /* Gopenpgp.framework */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
@@ -41,9 +43,11 @@
 /* Begin PBXFileReference section */
 		E222215A89DA8FAD477C173B /* PassboltStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltStrings.swift; sourceTree = "<group>"; };
 		E222225899A97EC8F9CE465C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		E2222874EB4CB6D9B50629AD /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		E222294565456D675B800409 /* PassboltKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltKeys.swift; sourceTree = "<group>"; };
 		E2222DA5F2DA5EB4170072F9 /* EncryptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionView.swift; sourceTree = "<group>"; };
 		E2222ECC2AF8F7DD6D4D9652 /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		E2222FD0B1C0FBAD1BD7CC0D /* SignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		FA106287256E9E300051074F /* Gopenpgp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gopenpgp.framework; path = Frameworks/Gopenpgp.framework; sourceTree = "<group>"; };
 		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2222CFB259C49D87C0731B1 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				E2222874EB4CB6D9B50629AD /* SignViewController.swift */,
+				E2222FD0B1C0FBAD1BD7CC0D /* SignView.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
 		E2222DE60BCDC5CE8AB684A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 				E2222E47CD0DD845A5CC0F0F /* Encryption */,
 				E2222DE60BCDC5CE8AB684A4 /* Extensions */,
 				E2222E3F0B6522AAAF5C6542 /* Constants */,
+				E2222CFB259C49D87C0731B1 /* Sign */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
@@ -315,6 +329,8 @@
 				E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */,
 				E2222138EDC3D1130E7F50E9 /* PassboltStrings.swift in Sources */,
 				E222248621EFBE24C3E12CDE /* PassboltKeys.swift in Sources */,
+				E2222868CF0572328393D30A /* SignViewController.swift in Sources */,
+				E2222FA316541CF3555D5775 /* SignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

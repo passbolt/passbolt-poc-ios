@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class EncryptionView: UIView {
+class SignView: UIView {
 
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -14,7 +14,7 @@ class EncryptionView: UIView {
 
     private lazy var messageLabel: UILabel = {
         let label = UILabel()
-        label.text = PassboltStrings.Encryption.messageLabel
+        label.text = PassboltStrings.Sign.messageLabel
         label.textColor = UIColor.label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -29,23 +29,41 @@ class EncryptionView: UIView {
         return textView
     }()
 
+    private lazy var useFirstKeyLabel: UILabel = {
+        let label = UILabel()
+        label.text = PassboltStrings.Sign.useFirstKeyLabel
+        label.textColor = UIColor.label
+        label.font = UIFont.systemFont(ofSize: 16)
+        return label
+    }()
+
+    var keySwitch = UISwitch()
+
+    private lazy var useSecondKeyLabel: UILabel = {
+        let label = UILabel()
+        label.text = PassboltStrings.Sign.useSecondKeyLabel
+        label.textColor = UIColor.label
+        label.font = UIFont.systemFont(ofSize: 16)
+        return label
+    }()
+
     lazy var privateKeyButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)
-        button.setTitle(PassboltStrings.Encryption.privateKeyButton, for: .normal)
+        button.setTitle(PassboltStrings.Sign.privateKeyButton, for: .normal)
         return button
     }()
 
     lazy var publicKeyButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)
-        button.setTitle(PassboltStrings.Encryption.publicKeyButton, for: .normal)
+        button.setTitle(PassboltStrings.Sign.publicKeyButton, for: .normal)
         return button
     }()
 
     private lazy var keyLabel: UILabel = {
         let label = UILabel()
-        label.text = PassboltStrings.Encryption.keyLabel
+        label.text = PassboltStrings.Sign.keyLabel
         label.textColor = UIColor.label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -62,7 +80,7 @@ class EncryptionView: UIView {
 
     private lazy var passwordLabel: UILabel = {
         let label = UILabel()
-        label.text = PassboltStrings.Encryption.passwordLabel
+        label.text = PassboltStrings.Sign.passwordLabel
         label.textColor = UIColor.label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -78,23 +96,23 @@ class EncryptionView: UIView {
         return textView
     }()
 
-    lazy var encryptButton: UIButton = {
+    lazy var signButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)
-        button.setTitle(PassboltStrings.Encryption.encryptButton, for: .normal)
+        button.setTitle(PassboltStrings.Sign.signButton, for: .normal)
         return button
     }()
 
-    lazy var decryptButton: UIButton = {
+    lazy var verifyButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)
-        button.setTitle(PassboltStrings.Encryption.decryptButton, for: .normal)
+        button.setTitle(PassboltStrings.Sign.verifyButton, for: .normal)
         return button
     }()
 
     private lazy var resultLabel: UILabel = {
         let label = UILabel()
-        label.text = PassboltStrings.Encryption.resultLabel
+        label.text = PassboltStrings.Sign.resultLabel
         label.textColor = UIColor.label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -120,9 +138,9 @@ class EncryptionView: UIView {
         addSubviews(scrollView)
         scrollView.addSubview(scrollViewContent)
 
-        scrollViewContent.addSubviews(messageLabel, messageTextView, privateKeyButton, publicKeyButton,
-            keyLabel, keyTextView, passwordLabel, passwordTextView, encryptButton, decryptButton,
-            resultLabel, resultTextView)
+        scrollViewContent.addSubviews(messageLabel, messageTextView, useFirstKeyLabel, keySwitch, useSecondKeyLabel,
+            privateKeyButton, publicKeyButton, keyLabel, keyTextView, passwordLabel, passwordTextView,
+            signButton, verifyButton, resultLabel, resultTextView)
         setupConstraints()
     }
 
@@ -166,8 +184,23 @@ class EncryptionView: UIView {
             $0.height.equalTo(200)
         }
 
-        privateKeyButton.snp.makeConstraints {
+        keySwitch.snp.makeConstraints {
             $0.top.equalTo(messageTextView.snp.bottom).offset(16)
+            $0.centerX.equalToSuperview()
+        }
+
+        useFirstKeyLabel.snp.makeConstraints {
+            $0.centerY.equalTo(keySwitch.snp.centerY)
+            $0.trailing.equalTo(keySwitch.snp.leading).offset(-8)
+        }
+
+        useSecondKeyLabel.snp.makeConstraints {
+            $0.centerY.equalTo(keySwitch.snp.centerY)
+            $0.leading.equalTo(keySwitch.snp.trailing).offset(8)
+        }
+
+        privateKeyButton.snp.makeConstraints {
+            $0.top.equalTo(keySwitch.snp.bottom).offset(16)
             $0.leading.equalToSuperview().offset(64)
         }
 
@@ -200,18 +233,18 @@ class EncryptionView: UIView {
             $0.height.equalTo(50)
         }
 
-        encryptButton.snp.makeConstraints {
+        signButton.snp.makeConstraints {
             $0.top.equalTo(passwordTextView.snp.bottom).offset(16)
             $0.leading.equalToSuperview().offset(64)
         }
 
-        decryptButton.snp.makeConstraints {
-            $0.top.equalTo(encryptButton.snp.top)
+        verifyButton.snp.makeConstraints {
+            $0.top.equalTo(signButton.snp.top)
             $0.trailing.equalToSuperview().inset(64)
         }
 
         resultLabel.snp.makeConstraints {
-            $0.top.equalTo(encryptButton.snp.bottom).offset(16)
+            $0.top.equalTo(signButton.snp.bottom).offset(16)
             $0.leading.equalToSuperview().offset(16)
         }
 
@@ -220,7 +253,7 @@ class EncryptionView: UIView {
             $0.leading.equalToSuperview().offset(16)
             $0.trailing.equalToSuperview().inset(16)
             $0.height.equalTo(300)
-            $0.bottom.equalToSuperview().inset(128)
+            $0.bottom.equalToSuperview().inset(192)
         }
     }
 }
