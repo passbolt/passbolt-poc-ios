@@ -2,15 +2,15 @@ import Foundation
 import UIKit
 import Gopenpgp
 
-class EncryptionViewController: UIViewController {
+class SignVerifyViewController: UIViewController {
 
-    var customView: EncryptionView {
-        return view as! EncryptionView
+    var customView: SignVerifyView {
+        return view as! SignVerifyView
     }
 
     override func loadView() {
-        view = EncryptionView()
-        self.title = PassboltStrings.Encryption.title
+        view = SignVerifyView()
+        self.title = PassboltStrings.SignVerify.title
     }
 
     override func viewDidLoad() {
@@ -19,8 +19,8 @@ class EncryptionViewController: UIViewController {
             name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         customView.privateKeyButton.addTarget(self, action: #selector(privateButtonClicked), for: .touchUpInside)
         customView.publicKeyButton.addTarget(self, action: #selector(publicButtonClicked), for: .touchUpInside)
-        customView.encryptButton.addTarget(self, action: #selector(encryptButtonClicked), for: .touchUpInside)
-        customView.decryptButton.addTarget(self, action: #selector(decryptButtonClicked), for: .touchUpInside)
+        customView.signButton.addTarget(self, action: #selector(signButtonClicked), for: .touchUpInside)
+        customView.verifyButton.addTarget(self, action: #selector(verifyButtonClicked), for: .touchUpInside)
     }
 
     @objc func keyboardWillChangeFrame(_ notification: Notification) {
@@ -34,37 +34,41 @@ class EncryptionViewController: UIViewController {
     }
 
     @objc func privateButtonClicked() {
-        customView.keyTextView.text = PassboltKeys.privateKey1.rawValue
-        customView.passwordTextView.text = PassboltKeys.privateKey1Password.rawValue
+        let (key, password) = customView.keySwitch.isOn
+            ? (PassboltKeys.privateKey2, PassboltKeys.privateKey2Password)
+            : (PassboltKeys.privateKey1, PassboltKeys.privateKey1Password)
+        customView.keyTextView.text = key.rawValue
+        customView.passwordTextView.text = password.rawValue
     }
 
     @objc func publicButtonClicked() {
-        customView.keyTextView.text = PassboltKeys.publicKey1.rawValue
+        let key = customView.keySwitch.isOn ? PassboltKeys.publicKey2.rawValue : PassboltKeys.publicKey1.rawValue
+        customView.keyTextView.text = key
         customView.passwordTextView.text = ""
     }
 
-    @objc func encryptButtonClicked() {
-        let message = customView.messageTextView.text
-        let key = customView.keyTextView.text
-        var error: NSError?
-        let encrypted = HelperEncryptMessageArmored(key, message, &error)
-        if let error = error {
-            showError(error: error)
-        } else {
-            customView.resultTextView.text = encrypted
-        }
-    }
-
-    @objc func decryptButtonClicked() {
+    @objc func signButtonClicked() {
         let message = customView.messageTextView.text
         let key = customView.keyTextView.text
         let password = customView.passwordTextView.text.data(using: .utf8)
         var error: NSError?
-        let decrypted = HelperDecryptMessageArmored(key, password, message, &error)
+        let signed = HelperSignCleartextMessageArmored(key, password, message, &error)
         if let error = error {
             showError(error: error)
         } else {
-            customView.resultTextView.text = decrypted
+            customView.resultTextView.text = signed
+        }
+    }
+
+    @objc func verifyButtonClicked() {
+        let message = customView.messageTextView.text
+        let key = customView.keyTextView.text
+        var error: NSError?
+        let verified = HelperVerifyCleartextMessageArmored(key, message, CryptoGetUnixTime(), &error)
+        if let error = error {
+            showError(error: error)
+        } else {
+            customView.resultTextView.text = verified
         }
     }
 

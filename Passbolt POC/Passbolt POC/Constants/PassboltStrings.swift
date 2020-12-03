@@ -2,7 +2,15 @@ import Foundation
 
 enum PassboltStrings {
 
-    enum Encryption {
+    enum Main {
+        static let title = "Passbolt POC"
+    }
+
+    enum Encrypt {
+        static let title = "Encryption library POC"
+    }
+
+    enum EncryptDecrypt {
         static let title = "Encrypt/Decrypt POC"
         static let messageLabel = "Message"
         static let messageTextViewPlaceholder = "Paste or enter a message you want to encrypt or decrypt."
@@ -16,7 +24,7 @@ enum PassboltStrings {
         static let resultLabel = "Result"
     }
 
-    enum Sign {
+    enum SignVerify {
         static let title = "Sign/Verify POC"
         static let messageLabel = "Message"
         static let messageTextViewPlaceholder = "Paste or enter a message you want to encrypt or decrypt."
