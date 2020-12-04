@@ -14,6 +14,7 @@ enum PassboltStrings {
         static let title = "Encrypt/Decrypt POC"
         static let messageLabel = "Message"
         static let messageTextViewPlaceholder = "Paste or enter a message you want to encrypt or decrypt."
+        static let keysInfoLabel = "The keys are rsa3072 keys and were generated using gpg tool on MacOS."
         static let privateKeyButton = "Private key"
         static let publicKeyButton = "Public key"
         static let keyLabel = "Key"
@@ -22,12 +23,14 @@ enum PassboltStrings {
         static let encryptButton = "Encrypt"
         static let decryptButton = "Decrypt"
         static let resultLabel = "Result"
+        static let operationTime = "Operation took %.0f milliseconds"
     }
 
     enum SignVerify {
         static let title = "Sign/Verify POC"
         static let messageLabel = "Message"
         static let messageTextViewPlaceholder = "Paste or enter a message you want to encrypt or decrypt."
+        static let keysInfoLabel = "The keys are rsa3072 keys and were generated using gpg tool on MacOS."
         static let useFirstKeyLabel = "Use Key 1"
         static let useSecondKeyLabel = "Use Key 2"
         static let privateKeyButton = "Private key"
@@ -38,5 +41,6 @@ enum PassboltStrings {
         static let signButton = "Sign"
         static let verifyButton = "Verify"
         static let resultLabel = "Result"
+        static let operationTime = "Operation took %.0f milliseconds"
     }
 }

@@ -29,6 +29,15 @@ class SignVerifyView: UIView {
         return textView
     }()
 
+    private lazy var keysInfoLabel: UILabel = {
+        let label = UILabel()
+        label.text = PassboltStrings.SignVerify.keysInfoLabel
+        label.textColor = UIColor.label
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.numberOfLines = 0
+        return label
+    }()
+
     private lazy var useFirstKeyLabel: UILabel = {
         let label = UILabel()
         label.text = PassboltStrings.SignVerify.useFirstKeyLabel
@@ -138,8 +147,8 @@ class SignVerifyView: UIView {
         addSubviews(scrollView)
         scrollView.addSubview(scrollViewContent)
 
-        scrollViewContent.addSubviews(messageLabel, messageTextView, useFirstKeyLabel, keySwitch, useSecondKeyLabel,
-            privateKeyButton, publicKeyButton, keyLabel, keyTextView, passwordLabel, passwordTextView,
+        scrollViewContent.addSubviews(messageLabel, messageTextView, keysInfoLabel, useFirstKeyLabel, keySwitch,
+        useSecondKeyLabel, privateKeyButton, publicKeyButton, keyLabel, keyTextView, passwordLabel, passwordTextView,
             signButton, verifyButton, resultLabel, resultTextView)
         setupConstraints()
     }
@@ -184,8 +193,14 @@ class SignVerifyView: UIView {
             $0.height.equalTo(200)
         }
 
-        keySwitch.snp.makeConstraints {
+        keysInfoLabel.snp.makeConstraints {
             $0.top.equalTo(messageTextView.snp.bottom).offset(16)
+            $0.leading.equalToSuperview().offset(16)
+            $0.trailing.equalToSuperview().inset(16)
+        }
+
+        keySwitch.snp.makeConstraints {
+            $0.top.equalTo(keysInfoLabel.snp.bottom).offset(16)
             $0.centerX.equalToSuperview()
         }
 

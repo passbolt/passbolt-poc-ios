@@ -29,6 +29,15 @@ class EncryptDecryptView: UIView {
         return textView
     }()
 
+    private lazy var keysInfoLabel: UILabel = {
+        let label = UILabel()
+        label.text = PassboltStrings.EncryptDecrypt.keysInfoLabel
+        label.textColor = UIColor.label
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.numberOfLines = 0
+        return label
+    }()
+
     lazy var privateKeyButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)
@@ -120,7 +129,7 @@ class EncryptDecryptView: UIView {
         addSubviews(scrollView)
         scrollView.addSubview(scrollViewContent)
 
-        scrollViewContent.addSubviews(messageLabel, messageTextView, privateKeyButton, publicKeyButton,
+        scrollViewContent.addSubviews(messageLabel, messageTextView, keysInfoLabel, privateKeyButton, publicKeyButton,
             keyLabel, keyTextView, passwordLabel, passwordTextView, encryptButton, decryptButton,
             resultLabel, resultTextView)
         setupConstraints()
@@ -166,8 +175,14 @@ class EncryptDecryptView: UIView {
             $0.height.equalTo(200)
         }
 
-        privateKeyButton.snp.makeConstraints {
+        keysInfoLabel.snp.makeConstraints {
             $0.top.equalTo(messageTextView.snp.bottom).offset(16)
+            $0.leading.equalToSuperview().offset(16)
+            $0.trailing.equalToSuperview().inset(16)
+        }
+
+        privateKeyButton.snp.makeConstraints {
+            $0.top.equalTo(keysInfoLabel.snp.bottom).offset(16)
             $0.leading.equalToSuperview().offset(64)
         }
 

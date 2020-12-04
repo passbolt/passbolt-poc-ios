@@ -12,7 +12,9 @@
 		E222248621EFBE24C3E12CDE /* PassboltKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222294565456D675B800409 /* PassboltKeys.swift */; };
 		E2222792F2639F7728683F9B /* SignVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222FF3892DCA75699464E5 /* SignVerifyView.swift */; };
 		E2222AA800494AE05FE4F5F8 /* EncryptDecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222A30227987E3FFE93546 /* EncryptDecryptView.swift */; };
+		E2222AA98F4D1434B50A8C4E /* PassboltTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222248C5405F6AEC50565E9 /* PassboltTimer.swift */; };
 		E2222CFE4B9F08DDFC2DA3A5 /* SignVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222265B00645374297A5032 /* SignVerifyViewController.swift */; };
+		E2222D474FCF20E3D8CA1481 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22220F7CF5542AE6E35A58B /* UIViewController+Toast.swift */; };
 		E2222DA381D440F16AFC2434 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222BF1B79A94702BD08CF9 /* EncryptDecryptViewController.swift */; };
 		E2222E310A746D3A189ACCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222282A04E4B29576CB057C /* MainViewController.swift */; };
 		E2222FD3E8994168FB3C7ED6 /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222C70E72B0AAF8885B605 /* EncryptionViewController.swift */; };
@@ -43,8 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E22220F7CF5542AE6E35A58B /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		E222215A89DA8FAD477C173B /* PassboltStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltStrings.swift; sourceTree = "<group>"; };
 		E222225899A97EC8F9CE465C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		E222248C5405F6AEC50565E9 /* PassboltTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltTimer.swift; sourceTree = "<group>"; };
 		E222265B00645374297A5032 /* SignVerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignVerifyViewController.swift; sourceTree = "<group>"; };
 		E222282A04E4B29576CB057C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E222294565456D675B800409 /* PassboltKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltKeys.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E222225899A97EC8F9CE465C /* UIView+Subviews.swift */,
+				E22220F7CF5542AE6E35A58B /* UIViewController+Toast.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -152,6 +157,14 @@
 				E222294565456D675B800409 /* PassboltKeys.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		E2222ED20149659E77C3B22B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E222248C5405F6AEC50565E9 /* PassboltTimer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FA106286256E9E300051074F /* Frameworks */ = {
@@ -195,6 +208,7 @@
 				E2222E3F0B6522AAAF5C6542 /* Constants */,
 				E222224F95E4798E6C61CB10 /* Milestones */,
 				E222216C00446BDE2A4D790D /* Navigation */,
+				E2222ED20149659E77C3B22B /* Utils */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
@@ -363,6 +377,8 @@
 				E2222CFE4B9F08DDFC2DA3A5 /* SignVerifyViewController.swift in Sources */,
 				E2222792F2639F7728683F9B /* SignVerifyView.swift in Sources */,
 				E2222FD3E8994168FB3C7ED6 /* EncryptionViewController.swift in Sources */,
+				E2222D474FCF20E3D8CA1481 /* UIViewController+Toast.swift in Sources */,
+				E2222AA98F4D1434B50A8C4E /* PassboltTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,11 +47,15 @@ class EncryptDecryptViewController: UIViewController {
         let message = customView.messageTextView.text
         let key = customView.keyTextView.text
         var error: NSError?
+        let timer = PassboltTimer()
+        timer.start()
         let encrypted = HelperEncryptMessageArmored(key, message, &error)
         if let error = error {
             showError(error: error)
         } else {
             customView.resultTextView.text = encrypted
+            let durationInMs = timer.stopAndReturnDuration() * 1000
+            showToast(message: String(format: PassboltStrings.EncryptDecrypt.operationTime, durationInMs))
         }
     }
 
@@ -60,11 +64,15 @@ class EncryptDecryptViewController: UIViewController {
         let key = customView.keyTextView.text
         let password = customView.passwordTextView.text.data(using: .utf8)
         var error: NSError?
+        let timer = PassboltTimer()
+        timer.start()
         let decrypted = HelperDecryptMessageArmored(key, password, message, &error)
         if let error = error {
             showError(error: error)
         } else {
             customView.resultTextView.text = decrypted
+            let durationInMs = timer.stopAndReturnDuration() * 1000
+            showToast(message: String(format: PassboltStrings.EncryptDecrypt.operationTime, durationInMs))
         }
     }
 

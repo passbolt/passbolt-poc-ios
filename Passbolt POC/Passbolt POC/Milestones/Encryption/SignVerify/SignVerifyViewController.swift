@@ -52,11 +52,15 @@ class SignVerifyViewController: UIViewController {
         let key = customView.keyTextView.text
         let password = customView.passwordTextView.text.data(using: .utf8)
         var error: NSError?
+        let timer = PassboltTimer()
+        timer.start()
         let signed = HelperSignCleartextMessageArmored(key, password, message, &error)
         if let error = error {
             showError(error: error)
         } else {
             customView.resultTextView.text = signed
+            let durationInMs = timer.stopAndReturnDuration() * 1000
+            showToast(message: String(format: PassboltStrings.SignVerify.operationTime, durationInMs))
         }
     }
 
@@ -64,11 +68,15 @@ class SignVerifyViewController: UIViewController {
         let message = customView.messageTextView.text
         let key = customView.keyTextView.text
         var error: NSError?
+        let timer = PassboltTimer()
+        timer.start()
         let verified = HelperVerifyCleartextMessageArmored(key, message, CryptoGetUnixTime(), &error)
         if let error = error {
             showError(error: error)
         } else {
             customView.resultTextView.text = verified
+            let durationInMs = timer.stopAndReturnDuration() * 1000
+            showToast(message: String(format: PassboltStrings.SignVerify.operationTime, durationInMs))
         }
     }
 
