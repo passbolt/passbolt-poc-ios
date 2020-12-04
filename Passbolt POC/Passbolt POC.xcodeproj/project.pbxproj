@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E222207BB26F9B51BD568F92 /* AutofillTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222CD7BAD21CB6F883FCAF /* AutofillTestViewController.swift */; };
 		E2222138EDC3D1130E7F50E9 /* PassboltStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222215A89DA8FAD477C173B /* PassboltStrings.swift */; };
+		E22222F15C4A994A76038578 /* AutofillCredentialIdentitiesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22229E2A4C5E628B25CE730 /* AutofillCredentialIdentitiesProvider.swift */; };
 		E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222225899A97EC8F9CE465C /* UIView+Subviews.swift */; };
 		E222248621EFBE24C3E12CDE /* PassboltKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222294565456D675B800409 /* PassboltKeys.swift */; };
+		E222263B9E207C66EA4F1CF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222206C46423105D2B621A8 /* MainViewController.swift */; };
 		E2222792F2639F7728683F9B /* SignVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222FF3892DCA75699464E5 /* SignVerifyView.swift */; };
 		E2222AA800494AE05FE4F5F8 /* EncryptDecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222A30227987E3FFE93546 /* EncryptDecryptView.swift */; };
 		E2222AA98F4D1434B50A8C4E /* PassboltTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222248C5405F6AEC50565E9 /* PassboltTimer.swift */; };
+		E2222CE7B5E48247E157AA65 /* PassboltKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222294565456D675B800409 /* PassboltKeys.swift */; };
 		E2222CFE4B9F08DDFC2DA3A5 /* SignVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222265B00645374297A5032 /* SignVerifyViewController.swift */; };
 		E2222D474FCF20E3D8CA1481 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22220F7CF5542AE6E35A58B /* UIViewController+Toast.swift */; };
 		E2222DA381D440F16AFC2434 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222BF1B79A94702BD08CF9 /* EncryptDecryptViewController.swift */; };
-		E2222E310A746D3A189ACCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222282A04E4B29576CB057C /* MainViewController.swift */; };
+		E2222FC7D6AAD5E15C4C9DC0 /* AutofillTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222577D65B68AA205AC8FA /* AutofillTestView.swift */; };
 		E2222FD3E8994168FB3C7ED6 /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222C70E72B0AAF8885B605 /* EncryptionViewController.swift */; };
 		FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA106287256E9E300051074F /* Gopenpgp.framework */; };
+		FA181FDD257FA7BF007DC0D3 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA181FDC257FA7BF007DC0D3 /* AuthenticationServices.framework */; };
+		FA181FE6257FAA46007DC0D3 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA181FDC257FA7BF007DC0D3 /* AuthenticationServices.framework */; };
+		FA181FE9257FAA46007DC0D3 /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA181FE8257FAA46007DC0D3 /* CredentialProviderViewController.swift */; };
+		FA181FEC257FAA46007DC0D3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA181FEA257FAA46007DC0D3 /* MainInterface.storyboard */; };
+		FA181FF1257FAA46007DC0D3 /* AutoFillExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA181FE5257FAA46007DC0D3 /* AutoFillExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAC08AA9258397B400F1995D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAB47CF3256E8DE400321530 /* SnapKit */; };
+		FAC08AAE2583989200F1995D /* Gopenpgp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA106287256E9E300051074F /* Gopenpgp.framework */; };
 		FAFADE94256D5E0000FCCA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */; };
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
 		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
@@ -28,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA181FEF257FAA46007DC0D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFADE88256D5DFF00FCCA97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA181FE4257FAA46007DC0D3;
+			remoteInfo = AutoFillExtension;
+		};
 		FAFADEA7256D5E0300FCCA97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAFADE88256D5DFF00FCCA97 /* Project object */;
@@ -44,19 +62,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA181FF2257FAA46007DC0D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA181FF1257FAA46007DC0D3 /* AutoFillExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E222206C46423105D2B621A8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E22220F7CF5542AE6E35A58B /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		E222215A89DA8FAD477C173B /* PassboltStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltStrings.swift; sourceTree = "<group>"; };
 		E222225899A97EC8F9CE465C /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		E222248C5405F6AEC50565E9 /* PassboltTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltTimer.swift; sourceTree = "<group>"; };
+		E2222577D65B68AA205AC8FA /* AutofillTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutofillTestView.swift; sourceTree = "<group>"; };
 		E222265B00645374297A5032 /* SignVerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignVerifyViewController.swift; sourceTree = "<group>"; };
-		E222282A04E4B29576CB057C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E222294565456D675B800409 /* PassboltKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassboltKeys.swift; sourceTree = "<group>"; };
+		E22229E2A4C5E628B25CE730 /* AutofillCredentialIdentitiesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutofillCredentialIdentitiesProvider.swift; sourceTree = "<group>"; };
 		E2222A30227987E3FFE93546 /* EncryptDecryptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptDecryptView.swift; sourceTree = "<group>"; };
 		E2222BF1B79A94702BD08CF9 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
 		E2222C70E72B0AAF8885B605 /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		E2222CD7BAD21CB6F883FCAF /* AutofillTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutofillTestViewController.swift; sourceTree = "<group>"; };
 		E2222FF3892DCA75699464E5 /* SignVerifyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignVerifyView.swift; sourceTree = "<group>"; };
 		FA106287256E9E300051074F /* Gopenpgp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gopenpgp.framework; path = Frameworks/Gopenpgp.framework; sourceTree = "<group>"; };
+		FA181FDB257FA7BF007DC0D3 /* Passbolt POC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Passbolt POC.entitlements"; sourceTree = "<group>"; };
+		FA181FDC257FA7BF007DC0D3 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		FA181FE5257FAA46007DC0D3 /* AutoFillExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AutoFillExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA181FE8257FAA46007DC0D3 /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
+		FA181FEB257FAA46007DC0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FA181FED257FAA46007DC0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA181FEE257FAA46007DC0D3 /* AutoFillExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFillExtension.entitlements; sourceTree = "<group>"; };
 		FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passbolt POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,10 +114,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA181FE2257FAA46007DC0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA181FE6257FAA46007DC0D3 /* AuthenticationServices.framework in Frameworks */,
+				FAC08AAE2583989200F1995D /* Gopenpgp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFADE8D256D5E0000FCCA97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC08AA9258397B400F1995D /* SnapKit in Frameworks */,
+				FA181FDD257FA7BF007DC0D3 /* AuthenticationServices.framework in Frameworks */,
 				FA106288256E9E300051074F /* Gopenpgp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,18 +150,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E222216C00446BDE2A4D790D /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				E222282A04E4B29576CB057C /* MainViewController.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
 		E222224F95E4798E6C61CB10 /* Milestones */ = {
 			isa = PBXGroup;
 			children = (
 				E2222432C37B390D08CCDDA4 /* Encryption */,
+				E2222B7EF42914FD8750CBCA /* Autofill */,
 			);
 			path = Milestones;
 			sourceTree = "<group>";
@@ -130,6 +176,16 @@
 				E2222A30227987E3FFE93546 /* EncryptDecryptView.swift */,
 			);
 			path = EncryptDecrypt;
+			sourceTree = "<group>";
+		};
+		E2222B7EF42914FD8750CBCA /* Autofill */ = {
+			isa = PBXGroup;
+			children = (
+				E2222CD7BAD21CB6F883FCAF /* AutofillTestViewController.swift */,
+				E2222577D65B68AA205AC8FA /* AutofillTestView.swift */,
+				E22229E2A4C5E628B25CE730 /* AutofillCredentialIdentitiesProvider.swift */,
+			);
+			path = Autofill;
 			sourceTree = "<group>";
 		};
 		E2222BDECD1CF202482787FD /* SignVerify */ = {
@@ -170,9 +226,21 @@
 		FA106286256E9E300051074F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA181FDC257FA7BF007DC0D3 /* AuthenticationServices.framework */,
 				FA106287256E9E300051074F /* Gopenpgp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA181FE7257FAA46007DC0D3 /* AutoFillExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FA181FE8257FAA46007DC0D3 /* CredentialProviderViewController.swift */,
+				FA181FEA257FAA46007DC0D3 /* MainInterface.storyboard */,
+				FA181FED257FAA46007DC0D3 /* Info.plist */,
+				FA181FEE257FAA46007DC0D3 /* AutoFillExtension.entitlements */,
+			);
+			path = AutoFillExtension;
 			sourceTree = "<group>";
 		};
 		FAFADE87256D5DFF00FCCA97 = {
@@ -181,6 +249,7 @@
 				FAFADE92256D5E0000FCCA97 /* Passbolt POC */,
 				FAFADEA9256D5E0300FCCA97 /* Passbolt POCTests */,
 				FAFADEB4256D5E0300FCCA97 /* Passbolt POCUITests */,
+				FA181FE7257FAA46007DC0D3 /* AutoFillExtension */,
 				FAFADE91256D5E0000FCCA97 /* Products */,
 				FA106286256E9E300051074F /* Frameworks */,
 			);
@@ -192,6 +261,7 @@
 				FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */,
 				FAFADEA6256D5E0300FCCA97 /* Passbolt POCTests.xctest */,
 				FAFADEB1256D5E0300FCCA97 /* Passbolt POCUITests.xctest */,
+				FA181FE5257FAA46007DC0D3 /* AutoFillExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +269,7 @@
 		FAFADE92256D5E0000FCCA97 /* Passbolt POC */ = {
 			isa = PBXGroup;
 			children = (
+				FA181FDB257FA7BF007DC0D3 /* Passbolt POC.entitlements */,
 				FAFADE93256D5E0000FCCA97 /* AppDelegate.swift */,
 				FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */,
 				FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */,
@@ -207,8 +278,8 @@
 				E2222DE60BCDC5CE8AB684A4 /* Extensions */,
 				E2222E3F0B6522AAAF5C6542 /* Constants */,
 				E222224F95E4798E6C61CB10 /* Milestones */,
-				E222216C00446BDE2A4D790D /* Navigation */,
 				E2222ED20149659E77C3B22B /* Utils */,
+				E222206C46423105D2B621A8 /* MainViewController.swift */,
 			);
 			path = "Passbolt POC";
 			sourceTree = "<group>";
@@ -234,6 +305,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA181FE4257FAA46007DC0D3 /* AutoFillExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA181FF5257FAA46007DC0D3 /* Build configuration list for PBXNativeTarget "AutoFillExtension" */;
+			buildPhases = (
+				FA181FE1257FAA46007DC0D3 /* Sources */,
+				FA181FE2257FAA46007DC0D3 /* Frameworks */,
+				FA181FE3257FAA46007DC0D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoFillExtension;
+			productName = AutoFillExtension;
+			productReference = FA181FE5257FAA46007DC0D3 /* AutoFillExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FAFADE8F256D5E0000FCCA97 /* Passbolt POC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFADEBA256D5E0300FCCA97 /* Build configuration list for PBXNativeTarget "Passbolt POC" */;
@@ -241,14 +329,16 @@
 				FAFADE8C256D5E0000FCCA97 /* Sources */,
 				FAFADE8D256D5E0000FCCA97 /* Frameworks */,
 				FAFADE8E256D5E0000FCCA97 /* Resources */,
+				FA181FF2257FAA46007DC0D3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA181FF0257FAA46007DC0D3 /* PBXTargetDependency */,
 			);
 			name = "Passbolt POC";
 			packageProductDependencies = (
-				FAB47CF3256E8DE400321530,
+				FAB47CF3256E8DE400321530 /* SnapKit */,
 			);
 			productName = "Passbolt POC";
 			productReference = FAFADE90256D5E0000FCCA97 /* Passbolt POC.app */;
@@ -299,6 +389,9 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					FA181FE4257FAA46007DC0D3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					FAFADE8F256D5E0000FCCA97 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -322,7 +415,7 @@
 			);
 			mainGroup = FAFADE87256D5DFF00FCCA97;
 			packageReferences = (
-				FAB47CF2256E8DE400321530,
+				FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FAFADE91256D5E0000FCCA97 /* Products */;
 			projectDirPath = "";
@@ -331,11 +424,20 @@
 				FAFADE8F256D5E0000FCCA97 /* Passbolt POC */,
 				FAFADEA5256D5E0300FCCA97 /* Passbolt POCTests */,
 				FAFADEB0256D5E0300FCCA97 /* Passbolt POCUITests */,
+				FA181FE4257FAA46007DC0D3 /* AutoFillExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA181FE3257FAA46007DC0D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA181FEC257FAA46007DC0D3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFADE8E256D5E0000FCCA97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +464,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA181FE1257FAA46007DC0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA181FE9257FAA46007DC0D3 /* CredentialProviderViewController.swift in Sources */,
+				E2222CE7B5E48247E157AA65 /* PassboltKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFADE8C256D5E0000FCCA97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,7 +482,6 @@
 				E22223ECAE7CA215E7FD3D6E /* UIView+Subviews.swift in Sources */,
 				E2222138EDC3D1130E7F50E9 /* PassboltStrings.swift in Sources */,
 				E222248621EFBE24C3E12CDE /* PassboltKeys.swift in Sources */,
-				E2222E310A746D3A189ACCE0 /* MainViewController.swift in Sources */,
 				E2222DA381D440F16AFC2434 /* EncryptDecryptViewController.swift in Sources */,
 				E2222AA800494AE05FE4F5F8 /* EncryptDecryptView.swift in Sources */,
 				E2222CFE4B9F08DDFC2DA3A5 /* SignVerifyViewController.swift in Sources */,
@@ -379,6 +489,10 @@
 				E2222FD3E8994168FB3C7ED6 /* EncryptionViewController.swift in Sources */,
 				E2222D474FCF20E3D8CA1481 /* UIViewController+Toast.swift in Sources */,
 				E2222AA98F4D1434B50A8C4E /* PassboltTimer.swift in Sources */,
+				E222207BB26F9B51BD568F92 /* AutofillTestViewController.swift in Sources */,
+				E2222FC7D6AAD5E15C4C9DC0 /* AutofillTestView.swift in Sources */,
+				E222263B9E207C66EA4F1CF6 /* MainViewController.swift in Sources */,
+				E22222F15C4A994A76038578 /* AutofillCredentialIdentitiesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +515,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FA181FF0257FAA46007DC0D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA181FE4257FAA46007DC0D3 /* AutoFillExtension */;
+			targetProxy = FA181FEF257FAA46007DC0D3 /* PBXContainerItemProxy */;
+		};
 		FAFADEA8256D5E0300FCCA97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAFADE8F256D5E0000FCCA97 /* Passbolt POC */;
@@ -414,6 +533,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FA181FEA257FAA46007DC0D3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA181FEB257FAA46007DC0D3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -425,6 +552,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA181FF3257FAA46007DC0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillExtension/AutoFillExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHX38H22ZT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AutoFillExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.passbolt.poc.auto-fill";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Autofill POC";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA181FF4257FAA46007DC0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillExtension/AutoFillExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UHX38H22ZT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AutoFillExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.passbolt.poc.auto-fill";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Autofill POC";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FAFADEB8256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,8 +727,10 @@
 		FAFADEBB256D5E0300FCCA97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Passbolt POC/Passbolt POC.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UHX38H22ZT;
@@ -571,8 +756,10 @@
 		FAFADEBC256D5E0300FCCA97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Passbolt POC/Passbolt POC.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UHX38H22ZT;
@@ -682,6 +869,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA181FF5257FAA46007DC0D3 /* Build configuration list for PBXNativeTarget "AutoFillExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA181FF3257FAA46007DC0D3 /* Debug */,
+				FA181FF4257FAA46007DC0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAFADE8B256D5DFF00FCCA97 /* Build configuration list for PBXProject "Passbolt POC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -721,7 +917,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FAB47CF2256E8DE400321530 = {
+		FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -732,9 +928,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FAB47CF3256E8DE400321530 = {
+		FAB47CF3256E8DE400321530 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FAB47CF2256E8DE400321530;
+			package = FAB47CF2256E8DE400321530 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

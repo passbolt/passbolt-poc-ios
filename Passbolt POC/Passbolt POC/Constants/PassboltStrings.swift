@@ -43,4 +43,11 @@ enum PassboltStrings {
         static let resultLabel = "Result"
         static let operationTime = "Operation took %.0f milliseconds"
     }
+
+    enum AutofillTest {
+        static let title = "AutoFill POC"
+        static let checkAutoFillStatusButton = "Check AutoFill status"
+        static let openAppleWebsiteButton = "Open Apple site"
+        static let openStravaApp = "Open Strava app"
+    }
 }

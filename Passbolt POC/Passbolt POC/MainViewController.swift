@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 private enum Milestone: String, CaseIterable {
     case encryption = "Encryption library POC"
@@ -22,6 +23,13 @@ class MainViewController: UITableViewController {
         self.title = PassboltStrings.Main.title
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
+
+        ASCredentialIdentityStore.shared.getState { state in
+            if state.isEnabled {
+                let provider = AutofillCredentialIdentitiesProvider()
+                ASCredentialIdentityStore.shared.saveCredentialIdentities(provider.provideCredentialIdentities())
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -51,7 +59,7 @@ class MainViewController: UITableViewController {
         case .encryption:
             controller = EncryptionViewController()
         case .autofill:
-            return
+            controller = AutofillTestViewController()
         case .setup:
             return
         case .secureStorage:

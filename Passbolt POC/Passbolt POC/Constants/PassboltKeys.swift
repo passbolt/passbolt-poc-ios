@@ -1,6 +1,6 @@
 import Foundation
 
-enum PassboltKeys: String {
+public enum PassboltKeys: String {
 
     case publicKey1 = """
                                     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -265,4 +265,23 @@ enum PassboltKeys: String {
                        """
 
     case privateKey2Password = "test2"
+
+    case autoFillEncryptedPassword = """
+                                     -----BEGIN PGP MESSAGE-----
+                                     Version: GopenPGP 2.1.0
+                                     Comment: https://gopenpgp.org
+
+                                     wcDMA3tBIduonoTEAQv/eNRabJsIFQjf/L1jCxSs+5vl0oA250Ha2xn+FZQ/BsJc
+                                     4Ui6JuXUonlHpikXmoeo5LdLaf1ejbJ+Fb1/ek9I0bY7AtwM26XTYi4yu4tQY834
+                                     cePt+OC9BGpWoIy2+aoN58IyId6JQbPQDbwQM1OxI1rXxldO2A7oeVnSGvKVQxOp
+                                     a3Na7Uizw0vg2SBtXm3GQosdXzhpRCMuQGIrjl+18i+V7pNykPxRHO+zAjdn01O7
+                                     ck1ZGxDWY64Ar0nq814KodM9nnSf3m97l+4/4Ok9kgAKGiVVMCkclzX2id9F12Dd
+                                     PsJRN6RPHqXGvS9cPr6bNmiMjd1w5XzyW2c0sZl4tgJBMBLW7qrJz1qbrlqp5ycH
+                                     uhdviHMPkNUwG+mTC4QRKcekxgykcNF4Z2wkSJNxIIToV62KOd55FM5SIsw4ap7f
+                                     cCcK4wZraQIKLKSueZN6EkwbwGG7lxM2glQN0i2XrG7hnIZlNyR2dW5h/iAYamEk
+                                     R4CfiI9N+2qcWI3+ENiw0joBM0ZQXfbPANrGk15ZSDAVOXksiv/ZvsihkKMx1v40
+                                     J5+cjRZYerEsTr7NWMgcI+lytis4Tf5ZDHUr
+                                     =55K2
+                                     -----END PGP MESSAGE-----
+                                     """
 }
