@@ -50,4 +50,29 @@ enum PassboltStrings {
         static let openAppleWebsiteButton = "Open Apple site"
         static let openStravaApp = "Open Strava app"
     }
+
+    enum SecureStorage {
+        static let title = "Secure storage POC"
+
+        static let useFirstKeyButton = "Use key 1"
+        static let useSecondKeyButton = "Use key 2"
+        static let publicKeyLabel = "Public key"
+        static let privateKeyLabel = "Private key"
+        static let passwordLabel = "Password"
+        static let clearUI = "Clear UI"
+        static let readKeysButton = "Read keys"
+        static let saveKeysButton = "Save keys"
+        static let clearStorageButton = "Clear encrypted storage"
+
+        static let saveToKeychainButton = "Save to Keychain"
+        static let readFromKeychainButton = "Read from Keychain"
+        static let deleteFromKeychainButton = "Delete from Keychain"
+
+        static let createKeyInSE = "Create key in SE"
+        static let loadKeyFromSE = "Load key from SE"
+        static let deleteKeyFromSE = "Delete key from SE"
+
+        static let encryptDataButton = "Encrypt data"
+        static let decryptDataButton = "Decrypt data"
+    }
 }

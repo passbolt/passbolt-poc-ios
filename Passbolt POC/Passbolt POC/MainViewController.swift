@@ -63,7 +63,7 @@ class MainViewController: UITableViewController {
         case .setup:
             return
         case .secureStorage:
-            return
+            controller = SecureStorageViewController()
         }
         self.navigationController?.pushViewController(controller, animated: true)
     }
