@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "014989FF-CCED-4789-8AFF-D8E0867BB10C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Passbolt POC.xcodeproj",
+        "identifier" : "FAFADEA5256D5E0300FCCA97",
+        "name" : "Passbolt POCTests"
+      }
+    }
+  ],
+  "version" : 1
+}

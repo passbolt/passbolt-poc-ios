@@ -1,0 +1,86 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  lane :lint do
+    swiftlint(
+      executable: "Pods/SwiftLint/swiftlint"
+    )
+  end
+
+  def kill_simulators
+    Action.sh("killall -9 Simulator 2>/dev/null || echo No simulators running")
+  end
+  
+  test_device = "iPhone 11"
+
+  lane :unit_tests do
+    desc "Run unit tests"
+    kill_simulators
+    clear_derived_data
+    scan(
+      workspace: "Passbolt POC.xcworkspace",
+      scheme: "Passbolt POC",
+      testplan: "UnitTest"
+    )
+  end
+
+  lane :UiTests do
+    desc "Run UI tests"
+    kill_simulators
+    clear_derived_data
+    cocoapods(
+      clean_install: true
+    )
+    scan(
+      workspace: "Passbolt POC.xcworkspace",
+      device: test_device,
+      scheme: "Passbolt POC",
+      testplan: "UnitTest"
+    )
+  end
+
+  desc "Build debug version"
+  lane :build do
+    gym(scheme: "Passbolt POC")
+  end
+
+  desc "Deploy debug version"
+  lane :deploy do
+    gym(scheme: "Passbolt POC")
+    # pilot or upload_to_testflight or firebase_app_distribution or deploy_shuttle
+  end
+
+  desc "Runs OWASP dependency analysis"
+  lane :owasp_dependency_check do
+    sh(
+      'dependency-check',
+      '--project', 
+      '"Passbolt PoC"',
+      '--scan Podfile.lock',
+      '--enableExperimental',
+      '-f',
+      'XML',
+      '-f',
+      'HTML',
+      '--out',
+      'reports/dependency-check/'
+    )
+  end
+
+end

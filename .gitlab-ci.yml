@@ -1,0 +1,121 @@
+stages:
+  - static_analysis
+  - test
+  - build
+  - deploy
+  - security
+
+cache:
+  key: "$CI_REPOSITORY_URL"
+
+before_script:
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US.UTF-8
+  - export LC_ALL=en_US.UTF-8
+
+"static_analysis:swiftlint":
+  stage: static_analysis
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  only:
+    - branches
+    - merge_requests
+    - tags
+  tags:
+    - xcode-12.2
+  script:
+    - bundle exec fastlane lint
+
+# Disabled for Polidea CI
+#"build:debug":
+#  stage: build
+#  before_script:
+#    - /bin/bash $CACHE_DIR/bundlerScript.bash
+#  only:
+#    - refs
+#    - branches
+#    - merge_requests
+#  tags:
+#    - xcode-12.2
+#  script:
+#    - bundle exec fastlane build,
+
+"testUnit:debug":
+  stage: test
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  only:
+    - branches
+    - merge_requests
+    - tags
+  tags:
+    - xcode-12.2
+  script:
+    - bundle exec fastlane unit_tests
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - app/build/test-results/testDebugUnitTest/TEST-*.xml
+    reports:
+      junit: app/build/test-results/testDebugUnitTest/TEST-*.xml
+
+"testUI:debug":
+  stage: test
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  tags:
+    - xcode-12.2
+  script:
+    - bundle exec fastlane UiTests
+  only:
+    - merge_requests
+    - tags
+
+"deploy:debug":
+  stage: deploy
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  tags:
+    - xcode-12.2
+  only:
+    - tags
+  script:
+    - bundle exec fastlane deploy
+
+"security:owasp_dependency_check":
+  stage: security
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  tags:
+    - owasp-dependency-check
+  script:
+    - bundle exec fastlane owasp_dependency_check
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - reports/dependency-check/dependency-check-junit.xml
+    reports:
+      junit: reports/dependency-check/dependency-check-junit.xml
+  only:
+    refs:
+      - merge_requests
+    changes:
+      - Podfile
+      - Podfile.lock
+
+"security:owasp_dependency_check_tag":
+  stage: security
+  before_script:
+    - /bin/bash $CACHE_DIR/bundlerScript.bash
+  tags:
+    - owasp-dependency-check
+  only:
+    - tags
+  script:
+    - bundle exec fastlane owasp_dependency_check
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - reports/dependency-check/dependency-check-junit.xml
+    reports:
+      junit: reports/dependency-check/dependency-check-junit.xml

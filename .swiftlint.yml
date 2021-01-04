@@ -1,0 +1,28 @@
+disabled_rules:
+  - force_cast
+  - trailing_newline
+  - trailing_semicolon
+  - unused_closure_parameter
+  - function_body_length
+  - line_length
+  - colon
+  - vertical_whitespace
+  - control_statement
+excluded:
+  - Pods
+  - .bundle
+  - vendor
+  - Passbolt POCTests
+  - Passbolt POCUITests
+  - .idea
+
+line_length: 125
+large_tuple: 3
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200

@@ -1,0 +1,6 @@
+framework module Pods_Passbolt_POC {
+  umbrella header "Pods-Passbolt POC-umbrella.h"
+
+  export *
+  module * { export * }
+}
