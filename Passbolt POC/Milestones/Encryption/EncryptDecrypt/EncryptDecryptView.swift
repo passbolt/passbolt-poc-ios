@@ -26,6 +26,7 @@ class EncryptDecryptView: UIView {
         textView.textColor = UIColor.label
         textView.isEditable = true
         textView.font = UIFont.systemFont(ofSize: 16)
+        textView.accessibilityIdentifier = AccessibilityIdentifiers.EncryptDecrypt.messageTextView
         return textView
     }()
 
@@ -66,6 +67,7 @@ class EncryptDecryptView: UIView {
         textView.textColor = UIColor.label
         textView.isEditable = true
         textView.font = UIFont.systemFont(ofSize: 16)
+        textView.accessibilityIdentifier = AccessibilityIdentifiers.EncryptDecrypt.keyTextView
         return textView
     }()
 

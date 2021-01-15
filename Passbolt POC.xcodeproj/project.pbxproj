@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6080D8CC25B07F300099329C /* PassboltTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8CB25B07F300099329C /* PassboltTimer.swift */; };
+		6080D8DD25B08BE70099329C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8DC25B08BE70099329C /* MainScreen.swift */; };
+		6080D8E325B08C040099329C /* MainScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8E225B08C040099329C /* MainScreenTest.swift */; };
+		6080D8E925B08C520099329C /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8E825B08C520099329C /* BaseScreen.swift */; };
+		6080D8EF25B08D030099329C /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8EE25B08D030099329C /* BaseTest.swift */; };
+		6080D8F525B090640099329C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6080D8F425B090640099329C /* AccessibilityIdentifiers.swift */; };
+		60F8547A25B09948004C1A03 /* EncryptDecryptTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8547925B09948004C1A03 /* EncryptDecryptTest.swift */; };
+		60F8548025B09971004C1A03 /* EncryptDecryptScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8547F25B09971004C1A03 /* EncryptDecryptScreen.swift */; };
+		60F8548625B099EB004C1A03 /* EncryptionLibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F8548525B099EB004C1A03 /* EncryptionLibraryScreen.swift */; };
 		D5AA9713DEC8DEB31BF13F8E /* Pods_Passbolt_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B016A90652C1C868E5927670 /* Pods_Passbolt_POC.framework */; };
 		E222207BB26F9B51BD568F92 /* AutofillTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2222CD7BAD21CB6F883FCAF /* AutofillTestViewController.swift */; };
 		E2222138EDC3D1130E7F50E9 /* PassboltStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222215A89DA8FAD477C173B /* PassboltStrings.swift */; };
@@ -39,8 +48,6 @@
 		FAFADE96256D5E0000FCCA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADE95256D5E0000FCCA97 /* SceneDelegate.swift */; };
 		FAFADE9D256D5E0300FCCA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9C256D5E0300FCCA97 /* Assets.xcassets */; };
 		FAFADEA0256D5E0300FCCA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFADE9E256D5E0300FCCA97 /* LaunchScreen.storyboard */; };
-		FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */; };
-		FAFADEB6256D5E0300FCCA97 /* Passbolt_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +91,15 @@
 /* Begin PBXFileReference section */
 		603A13F525A3282A002D8305 /* UITest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITest.xctestplan; sourceTree = "<group>"; };
 		603A140225A32A14002D8305 /* UnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTest.xctestplan; sourceTree = "<group>"; };
+		6080D8CB25B07F300099329C /* PassboltTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassboltTimer.swift; sourceTree = "<group>"; };
+		6080D8DC25B08BE70099329C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		6080D8E225B08C040099329C /* MainScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTest.swift; sourceTree = "<group>"; };
+		6080D8E825B08C520099329C /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		6080D8EE25B08D030099329C /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		6080D8F425B090640099329C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		60F8547925B09948004C1A03 /* EncryptDecryptTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptTest.swift; sourceTree = "<group>"; };
+		60F8547F25B09971004C1A03 /* EncryptDecryptScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptScreen.swift; sourceTree = "<group>"; };
+		60F8548525B099EB004C1A03 /* EncryptionLibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionLibraryScreen.swift; sourceTree = "<group>"; };
 		AFCCCCD4680C7D18904D1D11 /* Pods-Passbolt POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passbolt POC.release.xcconfig"; path = "Target Support Files/Pods-Passbolt POC/Pods-Passbolt POC.release.xcconfig"; sourceTree = "<group>"; };
 		B016A90652C1C868E5927670 /* Pods_Passbolt_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passbolt_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B017BDA5F4850C022B9AD7F5 /* Pods-Passbolt POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passbolt POC.debug.xcconfig"; path = "Target Support Files/Pods-Passbolt POC/Pods-Passbolt POC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,10 +136,8 @@
 		FAFADE9F256D5E0300FCCA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFADEA1256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFADEA6256D5E0300FCCA97 /* Passbolt POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCTests.swift; sourceTree = "<group>"; };
 		FAFADEAC256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFADEB1256D5E0300FCCA97 /* Passbolt POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passbolt POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passbolt_POCUITests.swift; sourceTree = "<group>"; };
 		FAFADEB7256D5E0300FCCA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +179,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6080D8D925B08AA40099329C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6080D8DC25B08BE70099329C /* MainScreen.swift */,
+				6080D8E825B08C520099329C /* BaseScreen.swift */,
+				60F8547F25B09971004C1A03 /* EncryptDecryptScreen.swift */,
+				60F8548525B099EB004C1A03 /* EncryptionLibraryScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6080D8DA25B08AB20099329C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6080D8E225B08C040099329C /* MainScreenTest.swift */,
+				6080D8EE25B08D030099329C /* BaseTest.swift */,
+				60F8547925B09948004C1A03 /* EncryptDecryptTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6080D8DB25B08ABF0099329C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BB78A23198FF86577A470144 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +289,7 @@
 			children = (
 				E222215A89DA8FAD477C173B /* PassboltStrings.swift */,
 				E222294565456D675B800409 /* PassboltKeys.swift */,
+				6080D8F425B090640099329C /* AccessibilityIdentifiers.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -327,8 +370,8 @@
 		FAFADEA9256D5E0300FCCA97 /* Passbolt POCTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAFADEAA256D5E0300FCCA97 /* Passbolt_POCTests.swift */,
 				FAFADEAC256D5E0300FCCA97 /* Info.plist */,
+				6080D8CB25B07F300099329C /* PassboltTimer.swift */,
 			);
 			path = "Passbolt POCTests";
 			sourceTree = "<group>";
@@ -336,7 +379,9 @@
 		FAFADEB4256D5E0300FCCA97 /* Passbolt POCUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FAFADEB5256D5E0300FCCA97 /* Passbolt_POCUITests.swift */,
+				6080D8DB25B08ABF0099329C /* Utils */,
+				6080D8DA25B08AB20099329C /* Tests */,
+				6080D8D925B08AA40099329C /* Screens */,
 				FAFADEB7256D5E0300FCCA97 /* Info.plist */,
 			);
 			path = "Passbolt POCUITests";
@@ -442,6 +487,7 @@
 					};
 					FAFADEB0256D5E0300FCCA97 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = FAFADE8F256D5E0000FCCA97;
 					};
 				};
@@ -561,6 +607,7 @@
 				E22222F15C4A994A76038578 /* AutofillCredentialIdentitiesProvider.swift in Sources */,
 				E22223BE0FCD0C72F0448900 /* SecureStorageView.swift in Sources */,
 				E22228945D65C9568D7BC57D /* SecureStorageViewController.swift in Sources */,
+				6080D8F525B090640099329C /* AccessibilityIdentifiers.swift in Sources */,
 				E22222BD10FFA4A55ACC7E73 /* KeychainManager.swift in Sources */,
 				E22227E0C9E97A9A60256E9B /* SecureEnclaveManager.swift in Sources */,
 			);
@@ -570,7 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFADEAB256D5E0300FCCA97 /* Passbolt_POCTests.swift in Sources */,
+				6080D8CC25B07F300099329C /* PassboltTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +625,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFADEB6256D5E0300FCCA97 /* Passbolt_POCUITests.swift in Sources */,
+				60F8548625B099EB004C1A03 /* EncryptionLibraryScreen.swift in Sources */,
+				6080D8EF25B08D030099329C /* BaseTest.swift in Sources */,
+				60F8548025B09971004C1A03 /* EncryptDecryptScreen.swift in Sources */,
+				6080D8E325B08C040099329C /* MainScreenTest.swift in Sources */,
+				6080D8DD25B08BE70099329C /* MainScreen.swift in Sources */,
+				6080D8E925B08C520099329C /* BaseScreen.swift in Sources */,
+				60F8547A25B09948004C1A03 /* EncryptDecryptTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,7 +915,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WR35VQMY5K;
 				INFOPLIST_FILE = "Passbolt POCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -884,7 +937,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WR35VQMY5K;
 				INFOPLIST_FILE = "Passbolt POCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

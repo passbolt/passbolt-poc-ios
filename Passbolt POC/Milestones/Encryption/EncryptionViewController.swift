@@ -27,7 +27,9 @@ class EncryptionViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = EncryptionFeature.allCases[indexPath.row].rawValue
+        let cellText = EncryptionFeature.allCases[indexPath.row].rawValue
+        cell.textLabel?.text = cellText
+        cell.accessibilityIdentifier = AccessibilityIdentifiers.EncryptionLibrary.encryptionFeatureTableCell + cellText.lowercased().replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "/", with: "_")
 
         return cell
     }

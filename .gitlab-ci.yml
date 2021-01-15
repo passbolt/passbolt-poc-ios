@@ -51,13 +51,14 @@ before_script:
   tags:
     - xcode-12.2
   script:
-    - bundle exec fastlane unit_tests
+    - bundle exec fastlane unitTests
   artifacts:
     expire_in: 1 day
     paths:
-      - app/build/test-results/testDebugUnitTest/TEST-*.xml
+      - fastlane/test_output/xctest/report.junit
+      - fastlane/test_output/xctest/report.html
     reports:
-      junit: app/build/test-results/testDebugUnitTest/TEST-*.xml
+      junit: fastlane/test_output/xctest/report.junit
 
 "testUI:debug":
   stage: test
@@ -70,6 +71,13 @@ before_script:
   only:
     - merge_requests
     - tags
+  artifacts:
+    expire_in: 2 day
+    paths:
+      - fastlane/test_output/xctest/report.junit
+      - fastlane/test_output/xctest/report.html
+    reports:
+      junit: fastlane/test_output/xctest/report.junit
 
 "deploy:debug":
   stage: deploy

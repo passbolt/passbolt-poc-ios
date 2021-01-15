@@ -17,6 +17,10 @@ default_platform(:ios)
 
 platform :ios do
 
+  before_all do
+    xcversion(version: "12.2")
+  end
+
   lane :lint do
     swiftlint(
       executable: "Pods/SwiftLint/swiftlint"
@@ -29,14 +33,17 @@ platform :ios do
   
   test_device = "iPhone 11"
 
-  lane :unit_tests do
+  lane :unitTests do
     desc "Run unit tests"
     kill_simulators
     clear_derived_data
     scan(
       workspace: "Passbolt POC.xcworkspace",
+      device: test_device,
       scheme: "Passbolt POC",
-      testplan: "UnitTest"
+      testplan: "UnitTest",
+      output_types: 'html,junit',
+      output_directory: './fastlane/test_output/xctest'
     )
   end
 
@@ -51,7 +58,9 @@ platform :ios do
       workspace: "Passbolt POC.xcworkspace",
       device: test_device,
       scheme: "Passbolt POC",
-      testplan: "UnitTest"
+      testplan: "UITest",
+      output_types: 'html,junit',
+      output_directory: './fastlane/test_output/xctest'
     )
   end
 
@@ -64,23 +73,6 @@ platform :ios do
   lane :deploy do
     gym(scheme: "Passbolt POC")
     # pilot or upload_to_testflight or firebase_app_distribution or deploy_shuttle
-  end
-
-  desc "Runs OWASP dependency analysis"
-  lane :owasp_dependency_check do
-    sh(
-      'dependency-check',
-      '--project', 
-      '"Passbolt PoC"',
-      '--scan Podfile.lock',
-      '--enableExperimental',
-      '-f',
-      'XML',
-      '-f',
-      'HTML',
-      '--out',
-      'reports/dependency-check/'
-    )
   end
 
 end

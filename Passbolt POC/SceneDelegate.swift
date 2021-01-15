@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = MainViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.accessibilityIdentifier = AccessibilityIdentifiers.NavigationBar.sceneNavigationBar
 
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = navigationController

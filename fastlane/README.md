@@ -21,9 +21,9 @@ or alternatively using `brew install fastlane`
 fastlane ios lint
 ```
 
-### ios unit_tests
+### ios unitTests
 ```
-fastlane ios unit_tests
+fastlane ios unitTests
 ```
 
 ### ios UiTests
@@ -41,11 +41,6 @@ Build debug version
 fastlane ios deploy
 ```
 Deploy debug version
-### ios owasp_dependency_check
-```
-fastlane ios owasp_dependency_check
-```
-Runs OWASP dependency analysis
 
 ----
 

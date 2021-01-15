@@ -44,9 +44,10 @@ class MainViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
-
         // Configure the cell...
-        cell.textLabel?.text = Milestone.allCases[indexPath.row].rawValue
+        let cellText = Milestone.allCases[indexPath.row].rawValue
+        cell.textLabel?.text = cellText
+        cell.accessibilityIdentifier = AccessibilityIdentifiers.MainView.milestoneTableCell + cellText.lowercased().replacingOccurrences(of: " ", with: "_")
 
         return cell
     }
