@@ -84,18 +84,20 @@ before_script:
 
 "security:owasp_dependency_check":
   stage: security
-  before_script:
-    - /bin/bash $CACHE_DIR/bundlerScript.bash
-  tags:
-    - owasp-dependency-check
+  image:
+    name: owasp/dependency-check
+    entrypoint: [""]
   script:
-    - bundle exec fastlane owasp_dependency_check
+    - /usr/share/dependency-check/bin/dependency-check.sh --project "Passbolt PoC" --scan Podfile.lock --enableExperimental  -f XML -f HTML --out .
   artifacts:
     expire_in: 1 day
     paths:
-      - reports/dependency-check/dependency-check-junit.xml
+      - dependency-check-report.xml
+      - dependency-check-report.html
     reports:
-      junit: reports/dependency-check/dependency-check-junit.xml
+      junit: dependency-check-report.xml
+  tags:
+    - docker
   only:
     refs:
       - merge_requests
@@ -105,17 +107,18 @@ before_script:
 
 "security:owasp_dependency_check_tag":
   stage: security
-  before_script:
-    - /bin/bash $CACHE_DIR/bundlerScript.bash
-  tags:
-    - owasp-dependency-check
-  only:
-    - tags
+  image:
+    name: owasp/dependency-check
+    entrypoint: [""]
   script:
-    - bundle exec fastlane owasp_dependency_check
+    - /usr/share/dependency-check/bin/dependency-check.sh --project "Passbolt PoC" --scan Podfile.lock --enableExperimental  -f XML -f HTML --out .
   artifacts:
     expire_in: 1 day
     paths:
-      - reports/dependency-check/dependency-check-junit.xml
+      - dependency-check-report.xml
+      - dependency-check-report.html
     reports:
-      junit: reports/dependency-check/dependency-check-junit.xml
+      junit: dependency-check-report.xml
+  tags:
+    - docker
+
